@@ -1,8 +1,13 @@
+function parseDisplayClass(squareValue) {
+  switch (squareValue) {
+    case '+': return 'good';
+    case '-': return 'assassin';
+    case '0': return 'neutral';
+  }
+}
+
 function renderCardLine(cardFace, squares, displayProp) {
-  squares.forEach(square => {
-    const squareElement = createDivWithClass('square', cardFace);
-    squareElement.innerText = square[displayProp];
-  });
+  squares.forEach(square => createDivWithClass(`square ${parseDisplayClass(square[displayProp])}`, cardFace));
 }
 
 function renderCard(card) {
