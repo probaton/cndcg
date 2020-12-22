@@ -1,6 +1,6 @@
-function renderCard(card) {
+function renderCardFace(card) {
   const container = document.createElement('div');
-  container.className = 'card';
+  container.className = 'card-face';
 
   card.forEach(square => {
     const squareElement = document.createElement('div');

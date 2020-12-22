@@ -1,10 +1,15 @@
-<body>
-  <div id='card-list'></div>
-</body>
-<script src='../dist/deck.js'></script>
-<script src='./render.js'></script>
-<script>
-  document
-    .getElementById('card-list')
-    .appendChild(renderCard(deck[0]));
-</script>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id='card-list'></div>
+    <script src='../dist/deck.js'></script>
+    <script src='./render.js'></script>
+    <script>
+      document
+      .getElementById('card-list')
+      .appendChild(renderCardFace(deck[0]));
+    </script>
+  </body>
+</html>

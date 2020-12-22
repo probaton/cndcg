@@ -1,0 +1,8 @@
+.card-face {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.square {
+  display: inline-grid;
+}
