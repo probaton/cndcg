@@ -1,1 +1,3 @@
-console.log('Hello world!');
+import Deck from './Deck';
+
+console.log(new Deck().build());
