@@ -1,3 +1,3 @@
-import Card from './Card';
+import generateDeck from './generateDeck';
 
-console.log(new Card().grid);
+console.log(generateDeck(50));
