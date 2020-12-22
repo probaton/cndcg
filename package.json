@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
-    "print-cards": "ts-node src/run.ts"
+    "print-deck": "ts-node src/printDeck.ts",
+    "save-deck": "ts-node src/saveDeck.ts"
   },
   "license": "ISC",
   "devDependencies": {
