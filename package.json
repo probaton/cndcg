@@ -1,0 +1,11 @@
+{
+  "name": "cncg",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "ts-node src/run.ts"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
