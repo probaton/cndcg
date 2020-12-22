@@ -1,3 +1,4 @@
-import generateDeck from './generateDeck';
+import { generateDeckByLine } from './generateDeck';
 
-console.log(generateDeck(50));
+const decks = generateDeckByLine(50);
+console.log(JSON.stringify(decks, undefined, 2));

@@ -30,6 +30,17 @@ export default class Card {
         squareNumber++;
       });
   }
+
+  getGridByLine(): Square[][] {
+    const grid = this.grid;
+    const splice5 = (squares: Square[]) => squares.splice(0, 5);
+
+    const gridByLine: Square[][] = [];
+    while (grid.length > 0) {
+      gridByLine.push(splice5(grid));
+    }
+    return gridByLine;
+  }
 }
 
 type SquareValue = '+' | '-' | '0';
