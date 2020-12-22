@@ -13,6 +13,6 @@
     "outDir": "dist",
     "resolveJsonModule": true
   },
-  "include": ["./**/*.ts", "./configs/*.json"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules/"]
 }
