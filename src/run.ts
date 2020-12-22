@@ -1,3 +1,3 @@
-import Deck from './Deck';
+import Card from './Card';
 
-console.log(new Deck().build());
+console.log(new Card().grid);
