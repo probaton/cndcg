@@ -4,12 +4,12 @@ export default class Card {
   constructor() {
     this.grid = [];
     this.addSquares('0', '0', 7);
-    this.addSquares('+', '-', 5);
-    this.addSquares('-', '+', 5);
+    this.addSquares('+', '0', 5);
+    this.addSquares('0', '+', 5);
     this.addSquares('+', '+', 3);
+    this.addSquares('-', '-', 1);
     this.addSquares('+', '-', 1);
     this.addSquares('0', '-', 1);
-    this.addSquares('-', '-', 1);
     this.addSquares('-', '+', 1);
     this.addSquares('-', '0', 1);
     this.shuffle();
