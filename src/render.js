@@ -24,6 +24,10 @@ function renderCard(card) {
   return cardElement;
 }
 
+function renderDeck(deck, parent) {
+  deck.map(renderCard).forEach(cardElement => parent.appendChild(cardElement));
+}
+
 function createDivWithClass(className, parent) {
   const element = document.createElement('div');
   element.className = className;

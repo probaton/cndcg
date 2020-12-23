@@ -7,9 +7,7 @@
     <script src='../dist/deck.js'></script>
     <script src='./render.js'></script>
     <script>
-      document
-        .getElementById('card-list')
-        .appendChild(renderCard(deck[0]));
+      renderDeck(deck, document.getElementById('card-list'));
     </script>
   </body>
 </html>
