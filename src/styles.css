@@ -1,4 +1,4 @@
-#card-list {
+.card-page {
   display: grid;
   grid-template-columns: auto auto;
 }
@@ -30,7 +30,7 @@
 }
 
 .assassin {
-  background-color: black;
+  background-color: #a6230c;
 }
 
 .good {
@@ -39,4 +39,10 @@
 
 .neutral {
   background-color: beige;
+}
+
+@media print {
+  .card-page{
+    page-break-before: always;
+  }
 }

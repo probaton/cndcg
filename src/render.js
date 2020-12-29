@@ -24,8 +24,21 @@ function renderCard(card) {
   return cardElement;
 }
 
+function splitCardsIntoPages(cardElements) {
+  const pages = [];
+  while(cardElements.length > 0) {
+    const page = createDivWithClass('card-page');
+    for (let i = 0; i < 10; i++) {
+      page.appendChild(cardElements.pop());
+    }
+    pages.push(page);
+  }
+  return pages;
+}
+
 function renderDeck(deck, parent) {
-  deck.map(renderCard).forEach(cardElement => parent.appendChild(cardElement));
+  const cardElements = deck.map(renderCard);
+  splitCardsIntoPages(cardElements).forEach(page => parent.appendChild(page));
 }
 
 function createDivWithClass(className, parent) {
